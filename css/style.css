@@ -1,0 +1,116 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,500&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap ');
+
+:root{
+    --font: 'Passion One', sans-serif;
+    --font_comum:'Inter', sans-serif;
+    --cor01:#bcc4b3;
+    --cor02:#006c78;
+    --cor03:#8fa3a0;
+    --cor04:#ddb104;
+    --cor05:#193b59;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   font-size: 1em;
+}
+body{
+   font-family: var(--font_comum);
+   background-color: var(--cor01)
+}
+header{
+   background-color: var(--cor03);
+   padding: 20px 0px;
+   text-align: center;
+   box-shadow: 2px 2px 18px black;
+   position: static;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: auto;
+}
+nav > a{
+    text-decoration: none;
+    color: var(--cor02);
+    font-size: 15px;
+    font-size: 1.1em;
+    transition: 1.0s;
+}
+.banner{
+    width: 100%;
+    height: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.conteudo > h2{
+    font-family: var(--font);
+    font-size: 3em;
+    padding-bottom: 15px;
+}
+.conteudo > p {
+    padding-bottom: 35px;
+}
+.conteudo > p > a{
+    text-decoration: none;
+    color: var(--cor02);
+    padding: 10px;
+    border: 2px solid var(--cor02);
+    border-radius: 10px;
+    transition: 1.0s;
+}
+nav > a:hover{
+    color: var(--cor04);
+    text-shadow: 10px 10px 10px black;
+}
+.conteudo > p > a:hover{
+    background-color: var(--cor03);
+    color: white;
+}
+
+@media (max-width: 730px){
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5% 10% 5% 0px;
+        font-size: 3.1vw;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+    }
+    section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    img{
+        width: 40vw;
+    }
+    .conteudo{
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .conteudo > h2{
+        font-size: 1.8em;
+    }
+    .conteudo > p > a{
+        padding: 5px;
+        border: 1px solid var(--cor02);
+        border-radius: 10px;
+        font-size: 1em;
+        width: 50vw;
+    }
+}
