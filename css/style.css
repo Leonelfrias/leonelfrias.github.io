@@ -192,6 +192,16 @@ footer{
     .menu{
         padding-left: -15px;
     }
+    .rodape{
+        display:flex;
+        flex-direction: column;   
+    }
+    .social{
+        padding-bottom: 40px;
+    }
+    .social > a > img{ 
+       width: 8vw;
+    }
 }
 @media (max-width: 855px){
     .dominio{
