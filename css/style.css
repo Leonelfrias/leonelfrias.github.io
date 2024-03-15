@@ -188,6 +188,8 @@ footer{
         border-radius: 10px;
         font-size: 1em;
         width: 50vw;
+        background-color: var(--cor02);
+        color: white;
     }
     .menu{
         padding-left: -15px;
