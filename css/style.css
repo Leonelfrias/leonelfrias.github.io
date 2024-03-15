@@ -27,7 +27,11 @@ header{
    padding: 20px 0px;
    text-align: center;
    box-shadow: 2px 2px 18px black;
-   position: static;
+   position: fixed;
+   width: 100%;
+   margin-top: -35px;
+   display: flex;
+   justify-content: space-evenly;
 }
 nav{
     display: flex;
@@ -42,10 +46,14 @@ nav > a{
     font-size: 1.1em;
     transition: 1.0s;
 }
+.menu{
+    padding-right: 50px;
+}
 .banner{
     width: 100%;
     height: 100%;
     margin-top: 30px;
+    padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -74,7 +82,74 @@ nav > a:hover{
     background-color: var(--cor03);
     color: white;
 }
-
+.banner01{
+    background-color: var(--cor03);
+    padding-top: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+    box-shadow: -2px -2px 18px black;
+}
+.banner01 > h1{
+    font-size: 2em;
+    font-family: var(--font);
+    padding-bottom: 30px;
+}
+.dominio{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+}
+.html, .css, .js{
+    box-shadow: 5px 5px 20px black;
+    border-radius: 15px;
+    padding: 40px;
+    background-color: var(--cor05);
+}
+.html > p, .css >p , .js > p{
+    padding-top: 20px;
+}
+footer{
+    background-color: var(--cor05);
+    padding: 30px;
+}
+.rodape{
+    display: flex;
+    justify-content: space-between;
+}
+.social > h1{
+    font-size: 2em;
+    padding-bottom: 15px;
+    font-family: var(--font);
+    color: var(--cor01);
+}
+.itens{
+    padding: 0px 6px;
+}
+.meus_sites{
+     padding-right: 50px;
+     color: var(--cor01);
+     display: flex;
+     flex-direction: column;
+}
+.meus_sites > h2{
+    font-size: 1.7em;
+    padding-bottom: 13px;
+}
+.meus_sites > li{
+    line-height: 30px;
+}
+.meus_sites > li > a{
+    text-decoration: none;
+    color: var(--cor01);
+}
+.meus_sites > li > a::after{
+    content: url(../imagem/icons/link-externo.png);
+}
+.meus_sites > li > a:hover{
+    color: var(--cor02);
+    border-bottom: 1px solid;
+}
 @media (max-width: 730px){
     header{
         display: flex;
@@ -90,9 +165,10 @@ nav > a:hover{
         align-items: center;
         margin: auto;
     }
-    section{
+    .banner{
         display: flex;
         flex-direction: column-reverse;
+        padding-top: 100px;
     }
     img{
         width: 40vw;
@@ -112,5 +188,20 @@ nav > a:hover{
         border-radius: 10px;
         font-size: 1em;
         width: 50vw;
+    }
+    .menu{
+        padding-left: -15px;
+    }
+}
+@media (max-width: 855px){
+    .dominio{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+        gap: 25px 0px;
+    }
+    .menu{
+       width: 5vw;
     }
 }
